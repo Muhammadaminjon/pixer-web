@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CUSTOM PROPERTY */
+:root {
+  --site-font: "Open Sans", "Arial", sans-serif;
+  --primary-color: #00BAFC;
+  --secondary-color: #000;
+  --grey-bg-color: #f4f4f4;
+  --text-color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 1px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--site-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  height: 100%;
+  background-color: #fff;
+  color: var(--secondary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* SITE BTN STYLES */
+.site-btn {
+  width: 100%;
+  max-width: 199px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.site-btn:hover {
+  opacity: 0.8;
+}
+.site-btn:active {
+  opacity: 0.6;
+}
+.site-logo {
+  width: 58.11px;
+  height: 20px;
+  display: block;
+  outline: none;
+}
+/* HEADER STYLES */
+.header {
+  padding: 18px 100px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 10%);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo__img {
+  width: 58.11px;
+  height: 20px;
+  display: block;
+}
+.header__nav {
+  margin-left: auto;
+}
+.nav__list {
+  display: flex;
+
+}
+.nav__item {
+
+}
+.nav__item:not(:last-child) {
+  margin-right: 32px;
+}
+.nav__item-link {
+  font-size: 15px;
+}
+.header__call-btn {
+  margin-left: 24px;
+}
