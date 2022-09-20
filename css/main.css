@@ -116,6 +116,7 @@ h1 {
 .site-btn:active {
   opacity: 0.6;
 }
+/* SITE LOGO STYLES */
 .site-logo {
   width: 58.11px;
   height: 20px;
@@ -128,11 +129,17 @@ h1 {
 .site-logo:active {
   opacity: 0.6;
 }
+/* SECTION TITLE */
+.section-title {
+  font-family: var(--site-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.2px;
+}
 /* HEADER STYLES */
 .header {
   position: sticky;
   top: 0px;
-  padding: 10px;
   background-color: #fff;
   padding: 18px 100px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 10%);
@@ -259,3 +266,35 @@ h1 {
 .dropdown:hover .dropdown-content {
   display: block;
 } 
+
+/* MAIN STYLES */
+.promo__container {
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promo__wrapper {
+  width: 100%;
+  max-width: 470px;
+}
+.promo__wrapper-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+.promo__wrapper-text {
+  width: 465px;
+  margin-bottom: 16px;
+}
+.promo__wrapper-btn {
+  width: 100%;
+  max-width: 232px;
+}
+.promo-video {
+  width: 458px;
+  height: 258px;
+  border-radius: 5px;
+}
